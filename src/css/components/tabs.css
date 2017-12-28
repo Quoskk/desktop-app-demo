@@ -1,0 +1,15 @@
+/* TABS */
+
+.nav-tabs {
+
+  > li > a {border-radius: 3px;}
+
+}
+
+.app--dark {
+
+  .nav-tabs {
+
+  }
+
+}

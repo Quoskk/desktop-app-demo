@@ -1,0 +1,192 @@
+
+/* HELPERS */
+
+.u-fr {float: right !important;}
+.u-fn {float: none !important;}
+.u-fl {float: left !important;}
+
+.u-mb0 {margin-bottom: 0 !important;}
+.u-mb-xs {margin-bottom: 5px !important;}
+.u-mb-sm {margin-bottom: 10px !important;}
+.u-mb-md {margin-bottom: 20px !important;}
+.u-mb-lg {margin-bottom: 30px !important;}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .u-xs-mb0 {margin-bottom: 0 !important;}
+  .u-xs-mb-xs {margin-bottom: 5px !important;}
+  .u-xs-mb-sm {margin-bottom: 10px !important;}
+  .u-xs-mb-md {margin-bottom: 20px !important;}
+  .u-xs-mb-lg {margin-bottom: 30px !important;}
+}
+
+.bg-warning {
+  &, * {color: #2a2323 !important;}
+  background: #fff365 !important;
+}
+.bg-primary {
+  &, * {color: #fff !important;}
+  background: #1873D0 !important;
+}
+.bg-info {
+  &, * {color: #fff !important;}
+  background: #0FA2F0 !important;
+}
+.bg-success {
+  &, * {color: #fff !important;}
+  background: #309a31 !important;
+}
+.bg-danger {
+  &, * {color: #fff !important;}
+  background: #ef3f20 !important;
+}
+.bg-muted {
+  &, * {color: #222 !important;}
+  background: #f5f5f5 !important;
+}
+
+.text-center img.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.u-text-left {text-align: left !important;}
+.u-text-right {text-align: right !important;}
+.u-text-center {text-align: center !important;}
+
+.text-primary {color: #1873D0 !important;}
+.text-info {color: #82BDE7 !important;}
+.text-danger {color: #ef3f20 !important;}
+.text-success {color: #34A348 !important;}
+.text-warning {color: #F07636 !important;}
+.text-muted {
+  color: #B4B4B4 !important;
+}
+a.text-muted:hover {
+  color: #888 !important;
+}
+/*a.*/
+textarea + .text-muted {
+  color: #999 !important;
+  &:hover {
+    color: #999 !important;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  span.visible-xs,
+  span.visible-xs,
+  span.visible-xs,
+  span.visible-xs,
+  span.visible-xs,
+  span.visible-xs,
+  span.visible-xs
+  {display: inline !important; }
+}
+
+@media only screen and (min-width : 1200px) {
+  span.visible-lg,
+  span.visible-lg,
+  span.visible-lg,
+  span.visible-lg,
+  span.visible-lg,
+  span.visible-lg,
+  span.visible-lg
+  {display: inline !important; }
+}
+
+.u-break-word {word-break: break-all !important;}
+.u-truncate-text {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: inline-block;
+
+  td > & {display: block; }
+}
+
+/* Development Utility Classes */
+.u-DEV {
+  [class*="col-"] {outline: 1px dashed red;}
+  .row {outline: 1px dashed blue;}
+}
+
+
+#home .hide-in-home,
+#templates .hide-in-templates,
+#documents .hide-in-documents,
+#contacts .hide-in-contacts,
+#account .hide-in-account,
+#admin .hide-in-admin {
+  display: none !important;
+}
+
+[class*="show-in"] {display: none;}
+#templates .show-in-templates,
+#documents .show-in-documents,
+#contacts .show-in-contacts,
+#account .show-in-account,
+#admin .show-in-admin,
+#home .show-in-home {
+  display: initial !important;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }

@@ -1,0 +1,150 @@
+/* MODALS */
+
+.ReactModal__Body--open {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Overlay */
+.ReactModal__Overlay {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  z-index: 1100 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.6) !important;
+}
+
+
+.close-btn {
+  position: absolute; z-index: 10;
+  top: 20px; right: 20px;
+  cursor: pointer;
+  &:hover { color: #F08B34; }
+}
+
+
+.modal--md,
+.modal--lg {
+  animation: slideIn .3s cubic-bezier(0, 0, .2, 1);
+  position: relative;
+  top: -50px; /* REVIEW */
+
+  &:focus {outline: none;}
+
+  width: 550px;
+  max-height: calc(100vh - 40px);
+  /*margin: 20px;*/
+  padding: 40px;
+  overflow-y: auto;
+  overflow: hidden;
+
+  &.modal--noscroll {
+    overflow: hidden;
+  }
+
+  border: 1px solid #bbb;
+  border-radius: 5px !important;
+  background-color: #fff;
+
+  .modal__header {}
+    .modal__title {
+      padding-right: 30px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      &+h4 {margin-bottom: 25px;}
+    }
+    .close-btn {
+      position: absolute;
+      top: -2px;
+      right: 15px;
+    }
+
+  .modal__content {
+    h4,
+    p.lead {font-size: 16px;}
+  }
+
+  .modal__footer {
+    clear: both;
+    text-align: right;
+    margin-top: 10px;
+
+    .btn:last-child {margin-left: 5px;}
+
+    .modal__footer__msg {
+      margin-top: 25px;
+      margin-bottom: -15px;
+      padding-top: 15px;
+      text-align: left;
+      p {font-size: 13px;}
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+
+.modal--lg {
+  width: 740px;
+}
+
+
+@media only screen and (max-height : 600px) {
+  .modal--md,
+  .modal--lg {
+    max-height: 85vh;
+  }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 780px) {
+  [class*="modal--"] {
+    .modal__title {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      text-transform: none;
+      &+h4 {margin-bottom: 15px;}
+    }
+
+  }
+}
+
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 540px) {
+
+    [class*="modal--"] {
+      padding: 20px;
+    }
+
+    .modal--md {
+      padding: 20px;
+
+      .modal__title {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-transform: none;
+        &+h4 {margin-bottom: 15px;}
+      }
+
+    }
+
+  }
+
+
+/*Animations*/
+@keyframes slideIn {
+  from { transform: translateY(35%); }
+    to { transform: translateY(0); }
+}
+
+.animate-slideIn {
+ animation: slideIn .3s cubic-bezier(0, 0, .2, 1);
+}

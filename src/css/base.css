@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import 'base/table.css';
+@import 'base/form.css';
+
+/* BASE */
+
+html,
+body {
+  /*font-family: 'Questrial', sans-serif;*/
+  /*user-select: none;*/
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  font-size: 15px;
+}
+
+/*.is-selectable {user-select: auto!important;}*/
+.not-selectable {user-select: none;}
+
+
+/* Remove border radius */
+a {
+  color: #1873D0;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: #1364b7;
+  }
+
+  &.fa:hover {
+    opacity: .7;
+    text-decoration: none;
+  }
+
+  &.link-muted,
+  & .link-muted {
+    color: #333;
+    &:hover, &:focus {
+      color: #0B75C2;
+    }
+  }
+
+  .app--dark & {
+    color: #ddd;
+    &:hover {color: #009ac6;}
+  }
+
+
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0 /*!important*/;
+  &, img {vertical-align: middle;}
+}
+
+h1, .h1 {
+  font-size: 32px;
+}
+h2, .h2 {
+  font-size: 24px;
+}
+h3, .h3 {
+  font-size: 19px;
+}
+h5, .h5 {
+  font-size: 16px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+  h2, .h2 {
+    font-size: 20px;
+  }
+  h3, .h3 {
+    font-size: 14px;
+  }
+  @media only screen and (max-width : 480px) {
+    h1, .h1 {
+      font-size: 25px;
+    }
+  }
+}
+
+.lead {
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+hr {
+  border-top-color: #ddd;
+
+  .app--dark & {
+    border-top-color: #4C4C4C;
+  }
+}
+
+ul, ol {
+  padding-left: 0;
+  list-style-position: inside;
+
+  li {margin-left: 0}
+}
+
+ol {
+  list-style-position: outside;
+  padding-left: 15px;
+}

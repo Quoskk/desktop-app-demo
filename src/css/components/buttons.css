@@ -1,0 +1,66 @@
+/* BUTTONS */
+
+.btn {
+
+  &:hover {
+    cursor: default;
+  }
+
+  >.fa:first-child {
+    margin-right: 4px;
+  }
+
+  &.btn-default {
+    &:hover {
+      color: #fff;
+      border-color: #0B75C2;
+      background: #0F83DE;
+    }
+  }
+
+  &.btn-primary {
+    border-color: #0B75C2;
+    background: #0B75C2;
+    &:hover {
+      color: #fff;
+      border-color: #0B75C2;
+      background: #0F83DE;
+    }
+  }
+
+
+}
+
+.app--dark {
+
+  .btn {
+
+    &.btn-default {
+      color: #ccc;
+      border-color: #242424;
+      background: #404040;
+
+      &:hover {
+        color: #ddd;
+        border-color: #101010;
+        background: #242424;
+
+      }
+    }
+
+  }
+
+}
+
+
+.close-btn {
+  font-size: 19px;
+  &:before { content: "\2715"; }
+  background: none;
+  border: 0;
+  outline: 0;
+
+  &:hover {
+    cursor: default;
+  }  
+}

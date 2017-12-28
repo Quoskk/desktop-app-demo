@@ -1,0 +1,49 @@
+/* UI OPTIONS */
+
+.ui-options {
+  display: inline-block;
+  list-style: none;
+  font-size: 12px;
+
+
+  > li {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 2px;
+      padding-left: 2px;
+      border-left: 1px solid #ccc;
+
+      .app--dark & {border-left: 0;}
+    }
+
+    .btn {
+      cursor: default;
+      &:hover {text-decoration: none;}
+    }
+
+    .btn-xs {
+      font-size: 9px;
+      text-transform: uppercase;
+      .fa {
+        position: relative;
+        top: 1px;
+        font-size: 11px;
+      }
+    }
+
+    .btn-link {
+      color: #333;
+      .fa {color: #000 }
+    }
+
+    .dropdown-toggle > .caret {
+      display: none;
+    }
+
+    .dropdown-menu {
+      min-width: 100px;
+      left: auto;
+    }
+  }
+}
