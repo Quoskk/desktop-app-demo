@@ -21,12 +21,5 @@ function createWindow(){
 	win.webContents.openDevTools()
 }
 
-exports.openWindow = () => {
-	let newWin = newBrowserWindow ({width:400, height:200})
-	newWin.loadURL (url.format({
-		pathname: path.join(__dirname, 'home.html'),
-		protocol: 'file',
-		slashes: true
-	}))
-}
+
 app.on ('ready', createWindow)
